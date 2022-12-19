@@ -150,7 +150,7 @@ PASS
 ok      loadbalancer    0.153s
 ```
 
-1. Logs on Server Side
+3. Logs on Server Side
 ```bash
 go run . -a wrr
 Backed Info - Name: B1, Endpoint: 127.0.0.1:25601, Enabled:true, Ratio: 2
