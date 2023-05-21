@@ -78,4 +78,6 @@ const (
 ```
 
 ### Watch a demo
-[Watch the video](https://github.com/NeetishPathak/System-Design/blob/master/wireprotosim/demo/Demo_Video.mov)
+https://github.com/NeetishPathak/System-Design/assets/4778360/21b9ccec-c277-466f-b3d9-8a4c9faa9dd4
+
+
