@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch Test</title>
+</head>
+<body>
+    <h1>Server Request Test</h1>
+    <button id="fetchButton">Send Fetch Request</button>
+    <p id="responseText"></p>
+
+    <script>
+        document.getElementById('fetchButton').addEventListener('click', function() {
+            fetch('http://127.0.0.1:8080/submit')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('responseText').textContent = 'Response: ' + data;
+                })
+                .catch(error => {
+                    document.getElementById('responseText').textContent = 'Fetch error: ' + error.message;
+                });
+        });
+    </script>
+</body>
+</html>
